@@ -6,40 +6,39 @@ class User
     public $telegram;
     public $lastOrderID;
     public $userID;
+    public $email;
 
     /**
      * @param $name
      * @param $telegram
      * @param $lastOrderID
      * @param $userID
+     * @param $email
      */
-    public function __construct($name, $telegram, $lastOrderID, $userID)
+    public function __construct($name, $telegram, $email, $lastOrderID, $userID)
     {
         $this->name = $name;
         $this->telegram = $telegram;
         $this->lastOrderID = $lastOrderID;
         $this->userID = $userID;
+        $this->email = $email;
     }
 
-
-    public function __partial($name, $telegram)
+    private function ToMessageName()
     {
-        $this->name = $name;
-        $this->telegram = $telegram;
+        return "Ім'я - " . $this->name . "\n";
     }
 
-    private function ToMessage_Name()
+    private function ToMessageTelegram()
     {
-        return "Ім'я -> " . $this->name . "\n";
+        return "Телеграм - " . $this->telegram . "\n";
     }
-
-    private function ToMessage_Telegram()
+    private function ToMessageEmail()
     {
-        return "Телеграм -> " . $this->telegram . "\n";
+        return "Email - " . $this->email . "\n";
     }
-
-    public function ToMessage()
+    public function ToMessageJoin()
     {
-        return $this->ToMessage_Name() . $this->ToMessage_Telegram();
+        return "Заявка на вступ в LFB\n \n" . $this->ToMessageName() . $this->ToMessageTelegram() . $this->ToMessageEmail();
     }
 }

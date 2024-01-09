@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php
-    require "../page-components/load.php"
+    require "../page-components/loader.php"
     ?>
     <title>Join Us</title>
 </head>
@@ -21,9 +21,9 @@ require "../page-components/header.php"
         <div class="form-container-join">
             <div class="form-header-join">
                 <img class="form-logo" alt="Логотип" src="../media/logos/logo-black.png">
-                <p>ПРИЄДНУЙСЯ ДО НАС</p>
+                <p class="form-header-join-text">ПРИЄДНУЙСЯ ДО НАС</p>
             </div>
-            <form>
+            <form action="../services/send-join.php" method="post">
                 <label>
                     <input id="name" name="name" type="text" placeholder="ІМ'Я" required>
                 </label>

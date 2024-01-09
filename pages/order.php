@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<?php
-    require "../page-components/load.php"
-?>
+    <?php
+    require "../page-components/loader.php"
+    ?>
     <title>LabForBeer</title>
 </head>
 <body>
@@ -29,21 +29,24 @@ require "../page-components/header.php"
                 </label>
 
                 <label>
-                    <input id="telegram" pattern="^(?:https?:\/\/t\.me\/|t\.me\/|@)([a-zA-Z0-9_]{5,})$" title="Введіть ID коректно (@username | t.me/username | https://t.me/@username)" name="telegram" type="text" placeholder="ТЕЛЕГРАМ ЛОГІН" required>
+                    <input id="telegram" pattern="^(?:https?:\/\/t\.me\/|t\.me\/|@)([a-zA-Z0-9_]{5,})$"
+                           title="Введіть ID коректно (@username | t.me/username | https://t.me/@username)"
+                           name="telegram" type="text" placeholder="ТЕЛЕГРАМ ЛОГІН" required>
                 </label>
 
                 <label>
                     <select id="subject" name="subject" placeholder="ПРЕДМЕТ" required>
                         <option value="" disabled selected>Оберіть тип</option>
                         <option value="mathcad">Mathcad</option>
-                        <option value="programming">Мови Програмування</option>
-                        <option value="proteus">Proteus</option>
+                        <option value="programming">Programming</option>
+                        <option value="programming">Proteus</option>
                         <option value="individual">Репетиторство</option>
                     </select>
                 </label>
 
                 <label>
-                    <input id="labNum" autocomplete="off" name="labNum" type="number" placeholder="НОМЕР ЛАБОРАТОРНОЇ" required>
+                    <input id="labNum" autocomplete="off" name="labNum" type="number" placeholder="НОМЕР ЛАБОРАТОРНОЇ"
+                           required>
                 </label>
 
                 <label>
@@ -53,7 +56,7 @@ require "../page-components/header.php"
                 <label>
                     <input id="deadline" autocomplete="off" value="" name="deadline" placeholder="ДЕДЛАЙН">
                 </label>
-    
+
                 <button type="submit">Замовити</button>
             </form>
         </div>

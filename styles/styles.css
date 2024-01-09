@@ -65,8 +65,9 @@ footer {
 
 
 .nav-button {
-    height: 19px;
+    width: 186px;
     color: white;
+    height: 20px;
     font-size: 32px;
     font-family: "Alumni Sans", sans-serif;
     font-weight: 300;
@@ -74,7 +75,9 @@ footer {
     word-wrap: break-word;
     text-decoration: none;
     position: relative;
+    text-align: center;
 }
+
 
 .nav-button::after {
     content: "";
@@ -94,6 +97,7 @@ footer {
 .header-logo {
     height: 88px;
     width: 80px;
+
 }
 
 .white-background {
@@ -421,7 +425,6 @@ main:nth-child(3) {
     border-radius: 15px;
     background: #F3F3F3;
     box-shadow: 0px 20px 45px 0px rgba(0, 0, 0, 0.10), 0px 82px 82px 0px rgba(0, 0, 0, 0.09), 0px 184px 110px 0px rgba(0, 0, 0, 0.05), 0px 327px 131px 0px rgba(0, 0, 0, 0.01), 0px 511px 143px 0px rgba(0, 0, 0, 0.00);
-
 }
 
 .form-header {
@@ -440,7 +443,6 @@ main:nth-child(3) {
     display: flex;
     align-content: center;
     padding: 22px 0 22px 34px;
-    justify-content: space-between;
 }
 
 .form-logo {
@@ -450,6 +452,11 @@ main:nth-child(3) {
 
 .form-header > p {
     margin: 0 0 0 85px;
+    font-size: 40px;
+    font-weight: bolder;
+    align-self: center;
+}
+.form-header-join-text {
     font-size: 40px;
     font-weight: bolder;
     align-self: center;
@@ -565,4 +572,100 @@ form > button:hover {
     border: 1px solid #000;
     background: #F3F3F3;
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.14), 0px 22px 22px 0px rgba(0, 0, 0, 0.12), 0px 49px 29px 0px rgba(0, 0, 0, 0.07), 0px 87px 35px 0px rgba(0, 0, 0, 0.02), 0px 136px 38px 0px rgba(0, 0, 0, 0.00);
+}
+
+.success-container {
+    width: 974px;
+    height: 580px;
+    border-radius: 15px;
+    background: #F3F3F3;
+    box-shadow: 0px 20px 45px 0px rgba(0, 0, 0, 0.10), 0px 82px 82px 0px rgba(0, 0, 0, 0.09), 0px 184px 110px 0px rgba(0, 0, 0, 0.05), 0px 327px 131px 0px rgba(0, 0, 0, 0.01), 0px 511px 143px 0px rgba(0, 0, 0, 0.00);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success-header{
+    font-size: 90px;
+    margin: 0;
+}
+.success-text{
+    font-size: 64px;
+    margin: 0;
+}
+.success-image{
+    margin-top: 22px ;
+    height: 122px;
+    width: 122px;
+}
+.success-button{
+    margin-top: 20px;
+    width: 380px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 3px 7px rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
+    border: 1px #020202 solid;
+    font-size: 36px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-out;
+}
+.success-button:hover {
+     background-color: #171717;
+     color: white;
+     border: 1px white solid;
+ }
+.labforbeer-info {
+    text-transform: uppercase;
+    display: block;
+    width: 880px;
+    height: 768px;
+    color: #F6F6F6;
+}
+.labforbeer-info-added {
+    display: block;
+    width: 880px;
+    height: 200px;
+    color: #F6F6F6;
+}
+.labforbeer-info-block {
+    display: block;
+    margin-top: 22px;
+    width: 100%;
+    height: 350px;
+}
+.labforbeer-info-added>.labforbeer-info-block {
+    display: block;
+    margin-top: 22px;
+    width: 100%;
+    height: 0;
+}
+.labforbeer-info>h1 {
+    color: #0B0B0B;
+    font-size: 65px;
+    margin-top: 0;
+}
+.labforbeer-info-added>h1{
+    color: #0B0B0B;
+    font-size: 65px;
+    margin-top: 40px;
+    text-align: right;
+}
+.labforbeer-info-line{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color:  rgba(0,0,0, 0.7);;
+    border-bottom: #D9D9D9 solid 1px;
+}
+.labforbeer-info-line > p{
+    font-size: 34px;
+    margin-top: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
