@@ -23,7 +23,7 @@
             <p class="success-header">LABFORBEER</p>
             <p class="success-text">Ваші дані було надіслано на обробку</p>
             <p class="success-text">Очікуйте повідомлення в телеграм!</p>
-            <a class="success-button" href="../pages/order.php">Повернутись на головну</a>
+            <a class="success-button" href="../homepage.php">Повернутись на головну</a>
         </div>
 
     </div>
