@@ -6,14 +6,13 @@ global $lfb_connection;
 
 include "../services/config.php";
 include "../services/connectDB.php";
+require "../components/Post.php";
+require "../vendor/autoload.php";
 
-$lfb_post_result = mysqli_query($lfb_connection, "SELECT 3 FROM `post`");
+$lfb_post_result = mysqli_query($lfb_connection, "SELECT * FROM `post`");
 
-while ($row = mysqli_fetch_assoc($lfb_post_result)) {
-    $post = new Post($row['postID'],$row['category'],$row['name'],$row['shortText'],$row['mainText'],$row['imageLink']);
-}
-
-
+$row = mysqli_fetch_assoc($lfb_post_result);
+    $post = new Post($row['postID'], $row['category'], $row['name'], $row['shortText'], $row['mainText']);
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,17 +31,17 @@ while ($row = mysqli_fetch_assoc($lfb_post_result)) {
 <main class="white-background">
     <div class="white-background-image">
         <div class="post-container">
-            <h1 class="category">ОПРИДІЛИСЬ</h1>
+            <h1 class="category">БЛОГ</h1>
             <div class="post">
                 <div class="post-date">
-                    22 січня
+                    <?php echo $post->category ?>
                 </div>
                 <div class="post-background">
-                    <img class="post-image" src="<?php ?>" alt=<?php ?>>
+                    <img class="post-image" src="<?php echo $post->imageLink ?>" alt=<?php echo $post->category ?>>
                     <div class="post-filling-container">
-                        <p class="post-header"><?php ?></p>
-                        <p class="post-name"><?php ?></p>
-                        <p class="post-short-text"><?php ?></p>
+                        <p class="post-header"><?php echo $post->name ?></p>
+                        <p class="post-name"><?php echo $post->shortText ?></p>
+                        <p class="post-short-text"><?php echo $post->mainText ?></p>
                     </div>
                 </div>
             </div>

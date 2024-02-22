@@ -17,15 +17,22 @@ class Post
      * @param $mainText
      * @param $imageLink
      */
-    public function __construct($postID, $category, $name, $shortText, $mainText, $imageLink)
+    public function __construct($postID, $category, $name, $shortText, $mainText)
     {
         $this->postID = $postID;
         $this->category = $category;
         $this->name = $name;
         $this->shortText = $shortText;
         $this->mainText = $mainText;
-        $this->imageLink = $imageLink;
+
+        if ($this->category == "Оприділись"){
+            $this->imageLink = "../media/post-images/choose.png";
+        }
+        elseif($this->category == "Бармен пояснить"){
+            $this->imageLink = "../media/post-images/barman-explain.png";
+        }
+        else{
+            $this->imageLink = "../media/post-images/unknown.png";
+        }
     }
-
-
 }

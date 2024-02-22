@@ -96,37 +96,36 @@
             <div class="spinning-sphere-arrow"></div>
             <p class="spinning-sphere-text">Кожна точка вашої проблеми знаходиться у сфері нашої компетентності</p>
         </div>
+
         <div class="about">
 
             <p class="about-us-header">
-                ПРО НАС
+                НАША КОМАНДА
             </p>
             <div class="our-team">
                 <div class="team-card">
                     <img class="card-photo" src="media/no-avatar.png" alt="Employee 1">
                     <div class="card-text">
-                        <p class="employee-name">Roman</p>
+                        <p class="employee-name">Vladyslav</p>
                         <p class="employee-job">Java Developer</p>
-                        <p class="employee-about">Працює у сфері розробки 2 роки, має досвід у чомусь.
-                            Креативний підхід до вирішення проблем</p>
+                        <p class="employee-about">Має досвід роботи в комерційних проєктах. Працює для вас уже 5 місяців</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img class="card-photo" src="media/no-avatar.png" alt="Employee 1">
+                    <div class="card-text">
+                        <p class="employee-name">Vitalii</p>
+                        <p class="employee-job">.NET Developer</p>
+                        <p class="employee-about">Молодий та перспективний розробник web застосунків.Працює для вас уже 1.5 роки</p>
                     </div>
                 </div>
                 <div class="team-card">
                     <img class="card-photo" src="media/no-avatar.png" alt="Employee 1">
                     <div class="card-text">
                         <p class="employee-name">Roman</p>
-                        <p class="employee-job">Java Developer</p>
-                        <p class="employee-about">Працює у сфері розробки 2 роки, має досвід у чомусь.
-                            Креативний підхід до вирішення проблем</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img class="card-photo" src="media/no-avatar.png" alt="Employee 1">
-                    <div class="card-text">
-                        <p class="employee-name">Roman</p>
-                        <p class="employee-job">Java Developer</p>
-                        <p class="employee-about">Працює у сфері розробки 2 роки, має досвід у чомусь.
-                            Креативний підхід до вирішення проблем</p>
+                        <p class="employee-job">Student</p>
+                        <p class="employee-about">Експерт в розумінні потреб наших клієнтів.
+                            Працює для вас уже 6 місяців</p>
                     </div>
                 </div>
             </div>
@@ -141,14 +140,14 @@
                     <div class="feedback">
                         <img class="feedback-image" src="media/no-avatar.png" alt="Фото користувача">
                         <div>
-                            <div class="feedback-name">Dana kitsya</div>
-                            <div class="feedback-text">Сервіс просто бомба, все швидко та якісно</div>
+                            <div class="feedback-name">@livonia.ua</div>
+                            <div class="feedback-text">Робота без помилок, відповідає методичці</div>
                         </div>
                     </div>
                     <div class="feedback">
                         <img class="feedback-image" src="media/no-avatar.png" alt="Фото користувача">
                         <div>
-                            <div class="feedback-name">Dana kitsya</div>
+                            <div class="feedback-name">@shpaaak_1641</div>
                             <div class="feedback-text">Сервіс просто бомба, все швидко та якісно</div>
                         </div>
                     </div>
@@ -157,15 +156,15 @@
                     <div class="feedback">
                         <img class="feedback-image" src="media/no-avatar.png" alt="Фото користувача">
                         <div>
-                            <div class="feedback-name">Dana kitsya</div>
-                            <div class="feedback-text">Сервіс просто бомба, все швидко та якісно</div>
+                            <div class="feedback-name">@vendoriilaa</div>
+                            <div class="feedback-text">Настільки все може бути просто, дякую !!!</div>
                         </div>
                     </div>
                     <div class="feedback">
                         <img class="feedback-image" src="media/no-avatar.png" alt="Фото користувача">
                         <div>
-                            <div class="feedback-name">Dana kitsya</div>
-                            <div class="feedback-text">Сервіс просто бомба, все швидко та якісно</div>
+                            <div class="feedback-name">@krupis</div>
+                            <div class="feedback-text">Дякую за цю роботу, дуже мені помогли!!!</div>
                         </div>
                     </div>
                 </div>

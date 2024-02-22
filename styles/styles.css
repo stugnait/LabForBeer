@@ -283,7 +283,8 @@ footer {
     font-size: 96px;
     font-weight: 400;
     height: 96px;
-    width: 250px;
+    width: 550px;
+    text-align: center;
 }
 
 .team-card {
@@ -420,7 +421,7 @@ main:nth-child(3) {
     height: 780px;
     border-radius: 15px;
     background: #F3F3F3;
-    box-shadow: 0px 20px 45px 0px rgba(0, 0, 0, 0.10), 0px 82px 82px 0px rgba(0, 0, 0, 0.09), 0px 184px 110px 0px rgba(0, 0, 0, 0.05), 0px 327px 131px 0px rgba(0, 0, 0, 0.01), 0px 511px 143px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0 20px 45px 0 rgba(0, 0, 0, 0.10), 0 82px 82px 0 rgba(0, 0, 0, 0.09), 0 184px 110px 0 rgba(0, 0, 0, 0.05), 0 327px 131px 0px rgba(0, 0, 0, 0.01), 0px 511px 143px 0px rgba(0, 0, 0, 0.00);
 }
 
 .form-container-join {
@@ -428,7 +429,7 @@ main:nth-child(3) {
     height: 568px;
     border-radius: 15px;
     background: #F3F3F3;
-    box-shadow: 0px 20px 45px 0px rgba(0, 0, 0, 0.10), 0px 82px 82px 0px rgba(0, 0, 0, 0.09), 0px 184px 110px 0px rgba(0, 0, 0, 0.05), 0px 327px 131px 0px rgba(0, 0, 0, 0.01), 0px 511px 143px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0 20px 45px 0 rgba(0, 0, 0, 0.10), 0 82px 82px 0 rgba(0, 0, 0, 0.09), 0 184px 110px 0px rgba(0, 0, 0, 0.05), 0 327px 131px 0px rgba(0, 0, 0, 0.01), 0 511px 143px 0 rgba(0, 0, 0, 0.00);
 }
 
 .form-header {
@@ -500,7 +501,7 @@ input {
     width: 336px;
     height: 50px;
     background: #FFF;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 5px 5px 0px rgba(0, 0, 0, 0.09), 0px 12px 7px 0px rgba(0, 0, 0, 0.05), 0px 21px 9px 0px rgba(0, 0, 0, 0.01), 0px 33px 9px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.10), 0 5px 5px 0px rgba(0, 0, 0, 0.09), 0px 12px 7px 0px rgba(0, 0, 0, 0.05), 0px 21px 9px 0px rgba(0, 0, 0, 0.01), 0px 33px 9px 0px rgba(0, 0, 0, 0.00);
     font-size: 20px;
     color: #171717;
     text-indent: 10px;
@@ -710,7 +711,7 @@ form > button:hover {
 }
 
 .post-image {
-    width: 650px;
+    width: 450px;
     height: 450px;
     margin: 25px;
 }
@@ -740,20 +741,20 @@ form > button:hover {
     flex-direction: column;
 }
 
-.post-filling-container{
+.post-filling-container {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.post-header{
+.post-header {
     display: flex;
-    width: 135px;
     height: 21px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: rgba(0, 0, 0, 0.50);
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
@@ -761,24 +762,23 @@ form > button:hover {
     text-transform: uppercase;
 }
 
-.post-name{
+.post-name {
     display: flex;
-    width: 489px;
     height: 22px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: #000;
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
 }
-.post-short-text{
+
+.post-short-text {
     display: flex;
-    width: 487px;
     height: 42px;
     flex-direction: column;
     justify-content: center;

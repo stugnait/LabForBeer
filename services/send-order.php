@@ -17,10 +17,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message .= "Дедлайн - " . $_POST["deadline"];
     }
 
+    $keyboard = [
+        [
+            ['text' => 'Кнопку не тикати', 'callback_data' => 'take_task'],
+        ],
+    ];
+
     $url = "https://api.telegram.org/bot$botToken/sendMessage";
+
     $params = [
         "chat_id" => $chatId,
         "text" => $message,
+        'reply_markup' => json_encode([
+            'inline_keyboard' => [
+                [
+                    ['text' => 'Взяти лабу', 'callback_data' => 'test_2'],
+                ],
+            ],
+            'one_time_keyboard' => TRUE,
+        ]),
     ];
 
     $client = new \GuzzleHttp\Client();
